@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 function Title() {
   console.log("composant Titre charge");
 
-  const h1Renders = useRef(0);
+  const h1Renders = useRef(h1Renders.current);
   console.log(h1Renders);
 
   setInterval(() => {
